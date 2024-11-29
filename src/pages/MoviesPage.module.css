@@ -1,0 +1,42 @@
+.section {
+  padding-block: 24px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.field {
+  width: 100%;
+  max-width: 270px;
+  height: 36px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+.field:hover {
+  border: 1px solid var(--main-color);
+}
+
+.button {
+  padding-inline: 16px;
+  height: 36px;
+  color: var(--black-color);
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  box-shadow: 0 0 4px 1px var(--fourth-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.button:hover {
+  color: var(--white-color);
+  background-color: var(--third-color);
+}

@@ -1,0 +1,70 @@
+.btn-header {
+  display: block;
+  position: relative;
+  width: 44px;
+  height: 26px;
+  margin-left: auto;
+  border-radius: 16px;
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  display: block;
+  width: 20px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-header.right .circle::before {
+  background-color: var(--main-color);
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 19px;
+  height: 18px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+:global(.dark-theme).right .circle::before {
+  background-color: var(--main-color);
+}
+
+.right .circle {
+  left: 44%;
+  top: 16%;
+}
+
+@media (max-width: 480px) {
+  .btn-header {
+    width: 38px;
+    height: 22px;
+  }
+
+  .circle {
+    width: 16px;
+    height: 16px;
+  }
+
+  .circle::before {
+    width: 16px;
+    height: 16px;
+  }
+
+  .right .circle {
+    left: 47%;
+    top: 16%;
+  }
+}
