@@ -1,17 +1,30 @@
 .section {
+  height: calc(100vh - 62px);
   padding-block: 24px;
+  background-image: url('/assets/moviesearch-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 28%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/assets/moviesearch-image.jpg');
+  }
 }
 
 .form {
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 10px;
   margin-bottom: 10px;
 }
 
 .field {
   width: 100%;
-  max-width: 270px;
+  max-width: 350px;
   height: 36px;
   padding: 8px 16px;
   border-radius: 8px;
@@ -27,7 +40,7 @@
 .button {
   padding-inline: 16px;
   height: 36px;
-  color: var(--black-color);
+  color: #ffffff;
   background-color: transparent;
   border: 1px solid var(--main-color);
   border-radius: 6px;

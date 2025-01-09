@@ -1,0 +1,14 @@
+.hero {
+  padding-block: 24px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-title {
+  font-size: 30px;
+  color: var(--main-color);
+}

@@ -72,10 +72,10 @@ const MoviesPage = () => {
             <ErrorMessage name="search" component="div" style={{ color: 'red' }} />
           </Form>
         </Formik>
-        {moviesByQuery && <MovieList movies={moviesByQuery} />}
         {isLoading && <Loader />}
+        {moviesByQuery && <MovieList movies={moviesByQuery} />}
         {!isLoading && moviesByQuery && moviesByQuery.length === 0 && (
-          <p style={{ color: 'red' }}>
+          <p style={{ fontSize: 20, color: 'red', textAlign: 'center' }}>
             Sorry, no movies found for your search query. Please try again.
           </p>
         )}
